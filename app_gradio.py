@@ -5,6 +5,12 @@ from utils.tools_gradio import fast_process
 from utils.tools import format_results, box_prompt, point_prompt, text_prompt
 from PIL import ImageDraw
 import numpy as np
+import os
+os.system("mkdir weights")
+os.system("cd weights;")
+os.system("wget https://huggingface.co/spaces/An-619/FastSAM/blob/main/weights/FastSAM.pt")
+os.system("wget https://huggingface.co/spaces/An-619/FastSAM/blob/main/weights/CLIP_ViT_B_32.pt")
+os.system("cd ..")
 
 # Load the pre-trained model
 model = YOLO('./weights/FastSAM.pt')
