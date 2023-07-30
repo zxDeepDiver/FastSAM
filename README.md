@@ -41,11 +41,6 @@ cd FastSAM
 pip install -r requirements.txt
 ```
 
-Install CLIP:
-
-```shell
-pip install git+https://github.com/openai/CLIP.git
-```
 
 ## <a name="GettingStarted"></a> Getting Started
 
