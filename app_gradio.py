@@ -9,7 +9,7 @@ import os
 
 
 os.system("mkdir weights")
-os.system("wget  https://download.openxlab.org.cn/models/zxair/FastSAM/weight/FastSAM-x" -o 'weights/FastSAM.pt' )
+os.system("wget  https://download.openxlab.org.cn/models/zxair/FastSAM/weight/FastSAM-x -o weights/FastSAM.pt" )
 os.system("wget -P weights https://huggingface.co/spaces/An-619/FastSAM/blob/main/weights/CLIP_ViT_B_32.pt")
 
 # Load the pre-trained model
