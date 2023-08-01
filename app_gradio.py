@@ -5,9 +5,11 @@ from utils.tools_gradio import fast_process
 from utils.tools import format_results, box_prompt, point_prompt, text_prompt
 from PIL import ImageDraw
 import numpy as np
-import os
+import os 
+
+
 os.system("mkdir weights")
-os.system("wget -P weights https://huggingface.co/spaces/An-619/FastSAM/blob/main/weights/FastSAM.pt")
+os.system("wget  https://download.openxlab.org.cn/models/zxair/FastSAM/weight/FastSAM-x" -o weights/FastSAM.pt )
 os.system("wget -P weights https://huggingface.co/spaces/An-619/FastSAM/blob/main/weights/CLIP_ViT_B_32.pt")
 
 # Load the pre-trained model
